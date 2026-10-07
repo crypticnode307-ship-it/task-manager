@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Register - Task Manager</title>
+
+<link rel="stylesheet" href="css/register.css">
+
+
+</head>
+
+<body>
+
+<main class="container">
+    <h1>Create Account</h1>
+
+    <p>Register for Task Manager</p>
+
+    <form id="registerForm">
+
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input
+                type="text"
+                id="username"
+                name="username"
+                required
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                required
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input
+                type="password"
+                id="password"
+                name="password"
+                required
+            >
+        </div>
+
+        <button type="submit">Register</button>
+
+    </form>
+
+    <div id="message"></div>
+
+    <p>
+        Already have an account?
+        <a href="login.html">Log in</a>
+    </p>
+</main>
+
+<script src="scripts/register.js"></script>
+
+</body>
+</html>
