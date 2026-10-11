@@ -3,7 +3,7 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
 
-const JWT_SECRET = "my-development-secret";
+const JWT_SECRET = process.env.JWT_SECRET || "default_secret"; // Use a default secret if not set in environment variables
 
 export async function registerUser(req, res) {
     const {username, email, password} = req.body;

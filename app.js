@@ -2,6 +2,7 @@ import express from "express";
 import db from "./database/db.js";
 import registrationRouter from "./routes/auth.js";
 import tasksRouter from "./routes/tasks.js";
+import dotenv from "dotenv/config";
 
 const app = express();
 app.use(express.json());
